@@ -1,6 +1,59 @@
 # ZIP_CRISPR_code
 Repository for code that was used in the publication "Improving efficiency of homology-directed repair with ZIP CRISPR"
 
+---
+
+## 📂 Repository structure
+```
+├── Barcode
+│ └── barcode01.sorted.bam
+│ └── barcode02.sorted.bam
+│ └──...
+├── Bam2Excel.py
+├── model.xlxs
+├── Tribam.py
+├── sequences.txt
+
+
+```
+
+
+## ⚙️ Analyze
+
+- Python ≥ 3.7  
+- [pysam](https://pysam.readthedocs.io/en/latest/)  
+- [pandas](https://pandas.pydata.org/)
+  
+Tested with:  
+pysam 0.22.0   
+pandas 2.3.1  
+Python 3.13.2  
+
+1. **BAM2Excel.py**
+  
+This script processes .sorted.bam files and calculates the proportion of each nucleotide for each selected position to determine the HDR editing rate per base, returning these data in xlsx format.
+
+Run from project root:
+```bash
+python3 BAM2Excel.py
+```
+
+2. **Tribam.py**  
+  
+This script earches specific sequences in the BAM corresponding to unedited, HDR edited sequences or eventually predominant InDels seen with IGV (Integrative Genomics Viewer) visualization to determine the HDR editing rate per read.
+
+Run with:
+
+```bash
+python3 Tribam.py
+```
+
+Output:
+Excel file with proportion of CRISPR outome scenarios in % + sub files with BAMs. 
+
+
+
+
 Date of last update: 13 november 2025
 
 📄 License
