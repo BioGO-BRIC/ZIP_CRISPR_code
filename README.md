@@ -35,7 +35,7 @@ This script processes .sorted.bam files and calculates the proportion of each nu
 
 Run from project root:
 ```bash
-python3 BAM2Excel.py
+python3 bam2excel.py
 ```
 
 2. **tribam.py**  
@@ -45,7 +45,7 @@ This script earches specific sequences in the BAM corresponding to unedited, HDR
 Run with:
 
 ```bash
-python3 Tribam.py
+python3 tribam.py
 ```
 
 Output:
