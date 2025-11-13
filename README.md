@@ -9,9 +9,9 @@ Repository for code that was used in the publication "Improving efficiency of ho
 │ └── barcode01.sorted.bam
 │ └── barcode02.sorted.bam
 │ └──...
-├── Bam2Excel.py
+├── bam2Excel.py
 ├── model.xlxs
-├── Tribam.py
+├── tribam.py
 ├── sequences.txt
 
 
@@ -29,7 +29,7 @@ pysam 0.22.0
 pandas 2.3.1  
 Python 3.13.2  
 
-1. **BAM2Excel.py**
+1. **bam2Excel.py**
   
 This script processes .sorted.bam files and calculates the proportion of each nucleotide for each selected position to determine the HDR editing rate per base, returning these data in xlsx format.
 
@@ -38,7 +38,7 @@ Run from project root:
 python3 BAM2Excel.py
 ```
 
-2. **Tribam.py**  
+2. **tribam.py**  
   
 This script earches specific sequences in the BAM corresponding to unedited, HDR edited sequences or eventually predominant InDels seen with IGV (Integrative Genomics Viewer) visualization to determine the HDR editing rate per read.
 
