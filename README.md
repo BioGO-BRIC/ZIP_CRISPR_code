@@ -40,9 +40,9 @@ python3 bam2excel.py
 
 2. **tribam.py**  
   
-This script earches specific sequences in the BAM corresponding to unedited, HDR edited sequences or eventually predominant InDels seen with IGV (Integrative Genomics Viewer) visualization to determine the HDR editing rate per read.
+This script searches specific sequences in the BAM corresponding to unedited, HDR edited sequences or eventually predominant InDels seen with IGV (Integrative Genomics Viewer) visualization to determine the HDR editing rate per read.
 
-Run with:
+Run from project root:
 
 ```bash
 python3 tribam.py
